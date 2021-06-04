@@ -1,0 +1,21 @@
+<script src="../plugins/datatables/js/jquery.js" type="text/javascript"></script>
+<script src="../plugins/datatables/js/jquery.dataTables.js" type="text/javascript"></script>
+<style type="text/css">
+@import "../plugins/datatables/css/demo_table_jui.css";
+@import "../plugins/datatables/themes/smoothness/jquery-ui-1.8.4.custom.css";
+</style>
+<style>
+*{
+font-family: arial;
+</style>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+$('#datatables').dataTable({
+"sPaginationType":"full_numbers",
+"aaSorting":[[1, "asc"]],
+"bJQueryUI":true
+});
+$("#datatables_filter input").focus();
+})
+</script>
+<!-- table class="display" id="datatables" -->
