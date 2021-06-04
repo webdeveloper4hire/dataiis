@@ -1,0 +1,17 @@
+.notification {
+  text-decoration: none;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
