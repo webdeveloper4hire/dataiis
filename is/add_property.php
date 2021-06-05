@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_property.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -178,7 +179,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">Entity Name:</td>
-      <td><input type="text" name="tb1_colunm2" value="DENR MIMAROPA Region" size="32" /></td>
+      <td><input type="text" name="tb1_colunm2" value="<?php echo $clientalias ;?> <?php echo $clientbranch;?> Region" size="32" /></td>
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">Fund Cluster:</td>

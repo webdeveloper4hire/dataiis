@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_payroll.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -173,7 +174,7 @@ $totalRows_rsemployee = mysql_num_rows($rsemployee);
 
 </div>
 <form action="<?php echo $editFormAction; ?>" method="POST" name="form1" id="form1">
-<input type="hidden" name="tb2_colunm2" value="DENR MIMAROPA" />
+<input type="hidden" name="tb2_colunm2" value="<?php echo $clientalias ;?> <?php echo $clientbranch;?>" />
 <input type="hidden" name="tb2_colunm3" value="<?php echo $row_rsemployee['tb1_colunm3']; ?>"  />
 <input type="hidden" name="tb2_colunm4" value="<?php echo $row_rsemployee['tb1_colunm4']; ?>"  />
 <input type="hidden" name="tb2_colunm5" value="<?php echo $row_rsemployee['tb1_colunm5']; ?>"  />
@@ -334,7 +335,7 @@ $totalRows_rsemployee = mysql_num_rows($rsemployee);
       <td><input type="text" name="tb2_colunm46" value="0" required /></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap="nowrap" align="right">DENREU:</td>
+      <td nowrap="nowrap" align="right"><?php echo $clientalias ;?>EU:</td>
       <td><input type="text" name="tb2_colunm19" value="0" required /></td>
     </tr>
     <tr valign="baseline">

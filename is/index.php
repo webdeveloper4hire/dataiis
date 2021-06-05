@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -78,14 +79,14 @@ if (isset($_POST['username'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>DENR Information Systems</title>
+	<title><?php echo $clientalias ;?> Information Systems</title>
 	<link rel="stylesheet" href="../assets/normalize.css">
 	<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
         <h3 align="center">
         <img src="../assets/denr-logo2.png" width="100"><br />
-        DENR Information Systems</h3>
+        <?php echo $clientalias ;?> Information Systems</h3>
     <section class="loginform cf">      
         <form name="login" method="POST" action="<?php echo $loginFormAction; ?>" accept-charset="utf-8">
 			<ul>

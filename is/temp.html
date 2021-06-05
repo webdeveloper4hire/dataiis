@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>DENR I.S</title>
+    <title><?php echo $clientalias ;?> I.S</title>
     
     <link href="../assets/css.css" rel="stylesheet">
     <link href="../assets/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
             </div>
 
             <div class="navbar-brand">
-                <a href="#" class="denr-system-name">DENR - Information Systems</a>
+                <a href="#" class="denr-system-name"><?php echo $clientalias ;?> - Information Systems</a>
             </div>
         </div>
 
@@ -67,7 +67,7 @@
 
 	<div>
         <div class="navbar-fixed-top body-title">    
-        	<h3 class="col-lg-10">DENR</h3>
+        	<h3 class="col-lg-10"><?php echo $clientalias ;?></h3>
         </div>
         
         Content
@@ -75,7 +75,7 @@
      </div>
 
         <footer class="navbar-inverse navbar-fixed-bottom noprint">
-            <span style="color:white">© 2016 - DENR</span>
+            <span style="color:white">© 2016 - <?php echo $clientalias ;?></span>
         </footer>
         
     </div>

@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_payroll.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -229,7 +230,7 @@ $totalRows_rspayslip = mysql_num_rows($rspayslip);
         <td><input type="text" name="tb2_colunm18" value="<?php echo htmlentities($row_rspayslip['tb2_colunm18'], ENT_COMPAT, 'utf-8'); ?>" size="32" /></td>
       </tr>
       <tr valign="baseline">
-        <td align="right" nowrap="nowrap">DENREU:</td>
+        <td align="right" nowrap="nowrap"><?php echo $clientalias ;?>EU:</td>
         <td><input type="text" name="tb2_colunm19" value="<?php echo htmlentities($row_rspayslip['tb2_colunm19'], ENT_COMPAT, 'utf-8'); ?>" size="32" /></td>
       </tr>
       <tr valign="baseline">

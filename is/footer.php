@@ -1,5 +1,5 @@
 ﻿<footer class="navbar-inverse navbar-fixed-bottom noprint">
-  <span style="color:white">© 2013 - DENR</span>
+  <span style="color:white">© 2013 - <?php echo $clientalias ;?></span>
 </footer>
         
     </div>

@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <?php date_default_timezone_set('Asia/Manila'); ?>
 <?php
@@ -43,7 +44,7 @@ $totalRows_rstable1 = mysql_num_rows($rstable1);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>DENR <?php echo $_SESSION['MM_Username'] ?></title>
+<title><?php echo $clientalias ;?> <?php echo $_SESSION['MM_Username'] ?></title>
 </head>
 
 <body>

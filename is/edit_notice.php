@@ -2,7 +2,7 @@
 <div>
 
 <div class="navbar-fixed-top body-title">    
-	<h3 class="col-lg-10">DENR Information System</h3>
+	<h3 class="col-lg-10"><?php echo $clientalias ;?> Information System</h3>
 </div>
 
 <div>

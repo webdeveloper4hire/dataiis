@@ -1,3 +1,4 @@
+<?php require_once('config.php'); ?>
 <?php date_default_timezone_set('Asia/Manila'); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -5,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<title>DENR Information System</title>
+<title><?php echo $clientalias ;?> Information System</title>
 
 <link href="../assets/css.css" rel="stylesheet">
 <link href="../assets/font-awesome.min.css" rel="stylesheet">
@@ -74,7 +75,7 @@ $(document).ready(function () {
             </div>
 
             <div class="navbar-brand">
-                <a href="#" class="denr-system-name">DENR - Information Systems</a>
+                <a href="#" class="denr-system-name"><?php echo $clientalias ;?> - Information Systems</a>
             </div>
         </div>
 

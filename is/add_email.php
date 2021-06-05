@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_admin.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -157,7 +158,7 @@ date_default_timezone_set("Asia/Hong_Kong");
 <div class="navbar-fixed-top body-title">    
 	<h3 class="col-lg-10">
       New Email
-      <small>DENR</small>
+      <small><?php echo $clientalias ;?></small>
     </h3>
 </div>
 
@@ -249,7 +250,7 @@ date_default_timezone_set("Asia/Hong_Kong");
                                             }
                                             ?><?php echo $row_rsuser['division']; ?>" />
                                             <input type="text" name="tb1_colunm17" value="" id="refresh" />
-                                            <input type="text" name="tb1_colunm19" value="MIMAROPA Region" />
+                                            <input type="text" name="tb1_colunm19" value="<?php echo $clientbranch;?> Region" />
                                             <input type="text" name="tb1_colunm20" value="<?php echo date("h:i A"); ?>" />
                                             <input type="text" name="tb1_colunm21" value="<?php echo date('Y-m-d'); ?>" />
                                             <input type="text" name="tb1_colunm22" value="N" />

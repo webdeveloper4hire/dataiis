@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_dats.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -126,7 +127,7 @@ date_default_timezone_set("Asia/Hong_Kong");
 <div class="navbar-fixed-top body-title">    
 	<h3 class="col-lg-10">
                         New Document Action <?php if ($_GET['barcoding'] == 'yes') { ?>Barcode<?php } ?>
-                        <small>DENR</small>
+                        <small><?php echo $clientalias ;?></small>
                     </h3>
 </div></li>
       </ol>
@@ -257,7 +258,7 @@ date_default_timezone_set("Asia/Hong_Kong");
                                 <?php if ($_GET['barcoding'] == 'yes') { ?>
                                 <div class="form-group">
                                             <label>BARCODE Number:</label>
-                                            <input type="text" name="tb2_colunm18" value="DENR4B<?php echo date('y'); ?><?php echo $_GET['table1_id'];?>" class="form-control"  size="60" />															                                </div>
+                                            <input type="text" name="tb2_colunm18" value="<?php echo $clientalias ;?>4B<?php echo date('y'); ?><?php echo $_GET['table1_id'];?>" class="form-control"  size="60" />															                                </div>
                                 <div class="form-group">           
                                             <label>Document Type:</label>
                                             <input type="text" name="tb2_colunm19" value="<?php echo $row_rstable1['tb1_colunm9']; ?>" class="form-control" list="doctype"  size="60" />

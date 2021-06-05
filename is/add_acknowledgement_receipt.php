@@ -36,14 +36,14 @@
 </tr>
 <tr valign="baseline">
 <td align="right">Email Adress:</td>
-<td><input name="email" type="email" value="denr.rdmimaropa@gmail.com" required /></td>
+<td><input name="email" type="email" value="denr.rd<?php echo $clientbranch;?>@gmail.com" required /></td>
 </tr>
 <tr valign="baseline">
 <td align="right">In Charge:</td>
 
 <td><select name="oic">
 <option value="____________________<br/>Chief, Records Section">Records Section</option>
-<option value="__________________________________<br/>Regional Director, MIMAROPA Region">Regional Director</option>
+<option value="__________________________________<br/>Regional Director, <?php echo $clientbranch;?> Region">Regional Director</option>
 <option value="____________________________<br/>IN CHARGE, OFFICE OF THE <br/>REGIONAL DIRECTOR">IN CHARGE-ORD</option>
 </select></td>
 </tr>

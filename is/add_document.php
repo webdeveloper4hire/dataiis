@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_dats.php'); ?>
 <?php date_default_timezone_set("Asia/Hong_Kong"); ?>
 <?php
@@ -145,7 +146,7 @@ $queryString_rstable1 = sprintf("&totalRows_rstable1=%d%s", $totalRows_rstable1,
 <div class="navbar-fixed-top body-title">    
 	<h3 class="col-lg-10">
                         New Document <?php if ($_GET['barcoding'] == 'yes') { ?>Barcode<?php } ?>
-                        <small>DENR</small>
+                        <small><?php echo $clientalias ;?></small>
                     </h3>
 </div></li>
       </ol>
@@ -185,7 +186,7 @@ $queryString_rstable1 = sprintf("&totalRows_rstable1=%d%s", $totalRows_rstable1,
                                             <input type="text" name="tb1_colunm1" value="Document-Tracking" class="form-control"  size="60" readonly /></div>
                                         <div class="form-group">
                                             <label>Office:</label>
-                                            <input type="text" name="tb1_colunm19" value="MIMAROPA Region" class="form-control" size="60" readonly /></div>
+                                            <input type="text" name="tb1_colunm19" value="<?php echo $clientbranch;?> Region" class="form-control" size="60" readonly /></div>
                                         
                                         <div class="form-group">
                                             <label>Category:</label>

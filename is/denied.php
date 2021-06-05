@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>DENR MIMAROPA Server Handler</title>
+<title><?php echo $clientalias ;?> <?php echo $clientbranch;?> Server Handler</title>
 <style>
 h1{
 font-size:80px;

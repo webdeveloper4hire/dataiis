@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_to.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -226,7 +227,7 @@ p {
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">Office:</td>
-      <td><input type="text" name="tb1_colunm19" value="DENR Regional Office IV-B, MIMAROPA" size="32" readonly /></td>
+      <td><input type="text" name="tb1_colunm19" value="<?php echo $clientalias ;?> Regional Office IV-B, <?php echo $clientbranch;?>" size="32" readonly /></td>
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">T.O Number:</td>
@@ -337,7 +338,7 @@ p {
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">Approved:</td>
-      <td><input type="text" name="tb1_colunm20" value="MARIA LOURDES G. FERRER, CESO III<br/>Regional Executive Director<br/>MIMAROPA Region" size="32" readonly/>
+      <td><input type="text" name="tb1_colunm20" value="MARIA LOURDES G. FERRER, CESO III<br/>Regional Executive Director<br/><?php echo $clientbranch;?> Region" size="32" readonly/>
       </td>
     </tr>
     <tr valign="baseline">
