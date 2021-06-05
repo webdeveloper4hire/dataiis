@@ -74,7 +74,7 @@ table.jermar th, table.jermar td {
  <h5 align="right">Appendix 60 <br></h5>
  <h5>Republic of the Philippines<br>
   <?php echo $clientfullname;?><br>
-  <?php echo $clientbranch;?> REGION <br>
+  <?php echo $clientbranch;?> <br>
   1515 L & S Building, Roxas Boulevard, Metro, Manila
   <br>
   <br>

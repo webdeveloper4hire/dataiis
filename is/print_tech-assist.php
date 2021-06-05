@@ -137,7 +137,7 @@ div.Section1
         <td><p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
   justify;line-height:normal'>
         <?php echo $clientfullname;?><br />
-        <?php echo $clientbranch;?> Region</p></td>
+        <?php echo $clientbranch;?></p></td>
       </tr>
 </table>
 

@@ -76,7 +76,7 @@ table.jermar th, table.jermar td {
         <td width="50" align="center"><img src="../images/logogrey.jpg" width="50" /></td>
         <td>
         <?php echo $clientfullname;?><br />
-        <?php echo $clientbranch;?> Region</td>
+        <?php echo $clientbranch;?></td>
       </tr>
 </table>
 

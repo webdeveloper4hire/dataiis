@@ -141,7 +141,7 @@ table.jermar th, table.jermar td {
         <td width="50" align="center"><img src="../images/logogrey.jpg" width="60" /></td>
         <td width="500">
         <?php echo $clientfullname;?><br />
-        <?php echo $clientbranch;?> Region<br />
+        <?php echo $clientbranch;?><br />
 	<?php echo $clientaddress ;?>
 	</td>
         <td align="center">

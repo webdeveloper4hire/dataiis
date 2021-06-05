@@ -77,7 +77,7 @@ table.jermar th, table.jermar td {
         <td width="50" align="center"><a href="list_to.php?tb1_colunm1=Travel-Order&type=advance"><img src="../images/logogrey.jpg" width="50" /></a></td>
         <td width="500">
         <?php echo $clientfullname;?><br />
-        Regional Office <?php echo $clientbranch;?> Region</td>
+        Regional Office <?php echo $clientbranch;?></td>
         <td></td>
       </tr>
       </table>

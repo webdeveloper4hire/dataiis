@@ -87,13 +87,13 @@ tr>:nth-child(5) { text-align: center; }
     <td><div class="crop2"><?php if ($row_rstable1['tb1_colunm6'] == NULL) {echo $row_rstable1['tb1_colunm18'];} else {echo $row_rstable1['tb1_colunm6'];}?></div></td>
     <td><div class="crop2"><?php
      if ($row_rstable1['tb1_colunm8'] == "ORED") {
-  		echo "ORED &lt;<?php echo $clientbranch;?>region@denr.gov.ph&gt;";
+  		echo "ORED &lt;mimaroparegion@denr.gov.ph&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "ARDTS") {
-  		echo "ARDTS &lt;ardts.<?php echo $clientbranch;?>@gmail.com&gt;";
+  		echo "ARDTS &lt;ardts.mimaropa@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "ARDMS") {
-  		echo "ARDMS &lt;dmg.<?php echo $clientbranch;?>@gmail.com&gt;";
+  		echo "ARDMS &lt;dmg.mimaropa@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "NGP") {
-  		echo "NGP &lt;<?php echo $clientbranch;?>engp@gmail.com&gt;";
+  		echo "NGP &lt;mimaropaengp@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "PMD") {
   		echo "PMD &lt;pmd_mimar4b@yahoo.com.ph&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "FD") {
@@ -103,13 +103,13 @@ tr>:nth-child(5) { text-align: center; }
 	} elseif ($row_rstable1['tb1_colunm8'] == "AD") {
   		echo "AD &lt;admimar4b@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "LPDD") {
-  		echo "LPDD &lt;denr<?php echo $clientbranch;?>lpdd@gmail.com&gt;";
+  		echo "LPDD &lt;denrmimaropalpdd@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "SMD") {
-  		echo "SMD &lt;surveys_<?php echo $clientbranch;?>@yahoo.com&gt;";
+  		echo "SMD &lt;surveys_mimaropa@yahoo.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "CDD") {
-  		echo "CDD &lt;cdd<?php echo $clientbranch;?>@gmail.com&gt;";
+  		echo "CDD &lt;cddmimaropa@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "ED") {
-  		echo "ED &lt;enforcement.<?php echo $clientbranch;?>@gmail.com&gt;";
+  		echo "ED &lt;enforcement.mimaropa@gmail.com&gt;";
 	} else {
   		echo $row_rstable1['tb1_colunm8'];
 	} ?></div></td>
