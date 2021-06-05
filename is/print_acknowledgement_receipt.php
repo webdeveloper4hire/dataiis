@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -50,7 +51,7 @@ $totalRows_rstable1 = mysql_num_rows($rstable1);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>DENR</title>
+<title><?php echo $clientalias ;?></title>
 <style type="text/css">
 .indent { text-indent: 30px; text-align:justify }
 table.jermar th, table.jermar td {
@@ -74,8 +75,8 @@ table.jermar th, table.jermar td {
       <tr>
         <td width="50" align="center"><img src="../images/logogrey.jpg" width="50" /></td>
         <td>
-        Department of Environment and Natural Resources<br />
-        MIMAROPA Region</td>
+        <?php echo $clientfullname;?><br />
+        <?php echo $clientbranch;?> Region</td>
       </tr>
 </table>
 

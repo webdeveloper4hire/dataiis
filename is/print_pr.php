@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -72,8 +73,8 @@ table.jermar th, table.jermar td {
 <center>  
  <h5 align="right">Appendix 60 <br></h5>
  <h5>Republic of the Philippines<br>
-  Department of Environment and Natural Resources<br>
-  MIMAROPA REGION <br>
+  <?php echo $clientfullname;?><br>
+  <?php echo $clientbranch;?> REGION <br>
   1515 L & S Building, Roxas Boulevard, Metro, Manila
   <br>
   <br>

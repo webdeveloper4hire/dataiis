@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -69,9 +70,9 @@ $totalRows_rscredits = mysql_num_rows($rscredits);
 	<tr>
     	<td width="395" align="right"><img src="../clip_image002_0000.gif" /a></td>
         <td width="593">Republic of the Philippines<br/>
-        	Department of Environment and Natural Resources<br/>
+        	<?php echo $clientfullname;?><br/>
             MINES AND GEOSCIENCES BUREAU<br/>
-            DENR By the Bay Bldg., Roxas Blvd., Manila</td>
+            <?php echo $clientalias ;?> By the Bay Bldg., Roxas Blvd., Manila</td>
           </tr>
   </table>
  <table width="990">

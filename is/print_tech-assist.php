@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -43,7 +44,7 @@ $totalRows_rstable1 = mysql_num_rows($rstable1);
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 12 (filtered)">
-<title>DENR</title>
+<title><?php echo $clientalias ;?></title>
 <style>
 <!--
  /* Font Definitions */
@@ -135,8 +136,8 @@ div.Section1
         <td width="50" align="center"><img src="../images/logogrey.jpg" width="50" /></td>
         <td><p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
   justify;line-height:normal'>
-        Department of Environment and Natural Resources<br />
-        MIMAROPA Region</p></td>
+        <?php echo $clientfullname;?><br />
+        <?php echo $clientbranch;?> Region</p></td>
       </tr>
 </table>
 

@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -89,10 +90,10 @@ date_default_timezone_set("Asia/Hong_Kong");
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<meta name="author" content="DENR" />
-<meta name="copyright" content="DENR; 2010" />
-<meta name="description" content="Department of Environment and Natural Resources" />
-<meta name="keywords" content="DENR,Environment,Nature,Government,MIMAROPA,Laguna,Calamba,Plants,Philippines,Seeds,Trees,Natural,Farm" />
+<meta name="author" content="<?php echo $clientalias ;?>" />
+<meta name="copyright" content="<?php echo $clientalias ;?>; 2010" />
+<meta name="description" content="<?php echo $clientfullname;?>" />
+<meta name="keywords" content="<?php echo $clientalias ;?>,Environment,Nature,Government,<?php echo $clientbranch;?>,Laguna,Calamba,Plants,Philippines,Seeds,Trees,Natural,Farm" />
 <title>DOCUMENT TRACKING SLIP - Print</title>
 
 <style type="text/css">
@@ -127,8 +128,8 @@ table.jermar th, table.jermar td {
       <tr>
         <td width="50" align="center"><img src="../images/logogrey.jpg" width="50" /></td>
         <td width="500">
-        Department of Environment and Natural Resources<br />
-        Regional Office IV-B, MIMAROPA</td>
+        <?php echo $clientfullname;?><br />
+        Regional Office IV-B, <?php echo $clientbranch;?></td>
         <td>
           <?php echo $row_rstable1['tb1_colunm12']; ?><br /> by:<?php echo $row_rstable1['tb1_colunm11']; ?> <font color="#999999"><?php echo $row_rstable1['table1_id']; ?></font></td>
       </tr>

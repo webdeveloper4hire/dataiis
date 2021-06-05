@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php date_default_timezone_set("Asia/Hong_Kong"); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -33,7 +34,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 
 mysql_select_db($database_connection, $connection);
-$query_rstable1 = "SELECT * FROM table1 WHERE tb1_colunm2 = '".$_GET['type']."' AND tb1_colunm21 LIKE '%".$_GET['date']."%' ORDER BY tb1_colunm24 DESC";
+$query_rstable1 = "SELECT * FROM table1 WHERE tb1_colunm2 = '".$_GET['type']."' AND tb1_colunm21 LIKE '%".$_GET['date']."%' ORDER BY tb1_colunm24 DESC, table1_id DESC";
 $rstable1 = mysql_query($query_rstable1, $connection) or die(mysql_error());
 $row_rstable1 = mysql_fetch_assoc($rstable1);
 $totalRows_rstable1 = mysql_num_rows($rstable1);
@@ -41,7 +42,7 @@ $totalRows_rstable1 = mysql_num_rows($rstable1);
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Inbox (<?php echo $totalRows_rstable1; ?>)</title>
+<title>(<?php echo $totalRows_rstable1; ?>) Inbox</title>
 <style>
 table { border-collapse: collapse; }
 th { background-color: #e6ffff; }
@@ -86,13 +87,13 @@ tr>:nth-child(5) { text-align: center; }
     <td><div class="crop2"><?php if ($row_rstable1['tb1_colunm6'] == NULL) {echo $row_rstable1['tb1_colunm18'];} else {echo $row_rstable1['tb1_colunm6'];}?></div></td>
     <td><div class="crop2"><?php
      if ($row_rstable1['tb1_colunm8'] == "ORED") {
-  		echo "ORED &lt;mimaroparegion@denr.gov.ph&gt;";
+  		echo "ORED &lt;<?php echo $clientbranch;?>region@denr.gov.ph&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "ARDTS") {
-  		echo "ARDTS &lt;ardts.mimaropa@gmail.com&gt;";
+  		echo "ARDTS &lt;ardts.<?php echo $clientbranch;?>@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "ARDMS") {
-  		echo "ARDMS &lt;dmg.mimaropa@gmail.com&gt;";
+  		echo "ARDMS &lt;dmg.<?php echo $clientbranch;?>@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "NGP") {
-  		echo "NGP &lt;mimaropaengp@gmail.com&gt;";
+  		echo "NGP &lt;<?php echo $clientbranch;?>engp@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "PMD") {
   		echo "PMD &lt;pmd_mimar4b@yahoo.com.ph&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "FD") {
@@ -102,13 +103,13 @@ tr>:nth-child(5) { text-align: center; }
 	} elseif ($row_rstable1['tb1_colunm8'] == "AD") {
   		echo "AD &lt;admimar4b@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "LPDD") {
-  		echo "LPDD &lt;denrmimaropalpdd@gmail.com&gt;";
+  		echo "LPDD &lt;denr<?php echo $clientbranch;?>lpdd@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "SMD") {
-  		echo "SMD &lt;surveys_mimaropa@yahoo.com&gt;";
+  		echo "SMD &lt;surveys_<?php echo $clientbranch;?>@yahoo.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "CDD") {
-  		echo "CDD &lt;cddmimaropa@gmail.com&gt;";
+  		echo "CDD &lt;cdd<?php echo $clientbranch;?>@gmail.com&gt;";
 	} elseif ($row_rstable1['tb1_colunm8'] == "ED") {
-  		echo "ED &lt;enforcement.mimaropa@gmail.com&gt;";
+  		echo "ED &lt;enforcement.<?php echo $clientbranch;?>@gmail.com&gt;";
 	} else {
   		echo $row_rstable1['tb1_colunm8'];
 	} ?></div></td>

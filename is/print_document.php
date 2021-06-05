@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_dats.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -50,8 +51,6 @@ $rstable2arc = mysql_query($query_rstable2arc, $connection) or die(mysql_error()
 $row_rstable2arc = mysql_fetch_assoc($rstable2arc);
 $totalRows_rstable2arc = mysql_num_rows($rstable2arc);
 ?>
-<?php require_once('config.php'); ?>
-
 <?php
 //Last Record
 $lastrecord = $totalRows_rstable2;
@@ -87,10 +86,10 @@ date_default_timezone_set("Asia/Hong_Kong");
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<meta name="author" content="DENR" />
-<meta name="copyright" content="DENR; 2010" />
-<meta name="description" content="Department of Environment and Natural Resources" />
-<meta name="keywords" content="DENR,Environment,Nature,Government,MIMAROPA,Laguna,Calamba,Plants,Philippines,Seeds,Trees,Natural,Farm" />
+<meta name="author" content="<?php echo $clientalias ;?>" />
+<meta name="copyright" content="<?php echo $clientalias ;?>; 2010" />
+<meta name="description" content="<?php echo $clientfullname;?>" />
+<meta name="keywords" content="<?php echo $clientalias ;?>,Environment,Nature,Government,<?php echo $clientbranch;?>,Laguna,Calamba,Plants,Philippines,Seeds,Trees,Natural,Farm" />
 <title>DOCUMENT TRACKING SLIP - Print</title>
 
 <style type="text/css">
@@ -141,9 +140,9 @@ table.jermar th, table.jermar td {
       <tr valign="middle">
         <td width="50" align="center"><img src="../images/logogrey.jpg" width="60" /></td>
         <td width="500">
-        Department of Environment and Natural Resources<br />
-        MIMAROPA Region<br />
-	1515 L&S Bldg. Roxas Blvd, Ermita, Manila
+        <?php echo $clientfullname;?><br />
+        <?php echo $clientbranch;?> Region<br />
+	<?php echo $clientaddress ;?>
 	</td>
         <td align="center">
 
@@ -217,7 +216,7 @@ href="edit_document.php?table1_id=<?php echo $row_rstable1['table1_id']; ?>"
 <a href="add_document-action.php?table1_id=<?php echo $row_rstable1['table1_id']; ?>&amp;tb2_colunm1=Document-Action&amp;barcoding=yes"><img src="../images/b_sbrowse.png" title="ADD NEW BARCODE" alt="ADD NEW BARCODE" /></a>
 &nbsp;&nbsp;
 
-<!--<a href="print_barcode.php?table1_id=DENR4B-<?php echo date('y'); ?>-<?php echo $row_rstable1['table1_id']; ?>" target="_blank"><img src="../images/b_sbrowse.png" title="PRINT Barcode" alt="PR" /></a>
+<!--<a href="print_barcode.php?table1_id=<?php echo $clientalias ;?>4B-<?php echo date('y'); ?>-<?php echo $row_rstable1['table1_id']; ?>" target="_blank"><img src="../images/b_sbrowse.png" title="PRINT Barcode" alt="PR" /></a>
 &nbsp;&nbsp;-->
 
 <a href="print_documents_range.php?tb1_colunm3=<?php echo $row_rstable1['tb1_colunm3']; ?>&tb1_colunm2=<?php echo $row_rstable1['tb1_colunm2']; ?>&start_id=<?php echo $row_rstable1['tb1_colunm17']; ?>&end_id=<?php echo $row_rstable1['tb1_colunm17']; ?>&tb1_colunm1=Document-Tracking"><img src="../images/b_export.png" title="PRINT AS SUMMARY" alt="PS" /></a>

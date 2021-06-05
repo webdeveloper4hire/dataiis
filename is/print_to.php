@@ -1,4 +1,5 @@
 ﻿<?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -75,8 +76,8 @@ table.jermar th, table.jermar td {
       <tr>
         <td width="50" align="center"><a href="list_to.php?tb1_colunm1=Travel-Order&type=advance"><img src="../images/logogrey.jpg" width="50" /></a></td>
         <td width="500">
-        Department of Environment and Natural Resources<br />
-        Regional Office MIMAROPA Region</td>
+        <?php echo $clientfullname;?><br />
+        Regional Office <?php echo $clientbranch;?> Region</td>
         <td></td>
       </tr>
       </table>

@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <?php date_default_timezone_set('Asia/Manila'); ?>
 <?php

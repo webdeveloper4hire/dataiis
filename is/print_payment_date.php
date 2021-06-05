@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -125,7 +126,7 @@ table.jermar th, table.jermar td {
     <td>
     Philhealth<br />
     MOWEL<br />
-    DENREU<br />
+    <?php echo $clientalias ;?>EU<br />
     HDMF Premium<br />
     HDMF MPL<br />
     HDMF H.Loan<br />

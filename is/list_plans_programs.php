@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -78,7 +79,7 @@ function humanTiming ($time)
   <div>
 
 <div class="navbar-fixed-top body-title">    
-	<h3 class="col-lg-10"><?php echo $_GET['tb1_colunm1'];?><small>DENR REGION</small> </h3>
+	<h3 class="col-lg-10"><?php echo $_GET['tb1_colunm1'];?><small><?php echo $clientalias ;?> REGION</small> </h3>
 </div>
             <div class="box-header">
               <a href="add_plans_programs.php?tb1_colunm1=<?php echo $_GET['tb1_colunm1'];?>&type=refresh_id" class="button"><button type="submit"  class="btn denr-btn-primary">Add New <?php echo $_GET['tb1_colunm1'];?></button></a> <a href="select_filter_plans_programs.php?type=refresh_id" target="_blank" class="button"><button type="submit"  class="btn denr-btn-primary">Filter Data</button></a></p>

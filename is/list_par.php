@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -61,7 +62,7 @@ $totalRows_rstable1 = mysql_num_rows($rstable1);
   <div>
 
 <div class="navbar-fixed-top body-title">    
-	<h3 class="col-lg-10">Property Monitoring<small> DENR REGION</small></h3>
+	<h3 class="col-lg-10">Property Monitoring<small> <?php echo $clientalias ;?> REGION</small></h3>
 </div>
             <div class="box-header">
               <a href="add_par.php?tb1_colunm1=<?php echo $_GET['tb1_colunm1'];?>" class="button"><button type="submit"  class="btn denr-btn-primary">Add New <?php echo $_GET['tb1_colunm1'];?></button></a>

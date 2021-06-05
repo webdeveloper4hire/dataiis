@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <?php require_once('config.php'); ?>
 <?php
@@ -100,7 +101,7 @@ table.jermar th, table.jermar td {
 <table border="1" cellspacing="0" cellpadding="5"  class="jermar" id="datatables">
   <thead>
   <tr>
-    <td colspan="15" align="center"><strong>CY <?php echo $_GET['rdate']; ?> FREEDOM OF INFORMATION (FOI) REGISTRY MIMAROPA REGION [<?php echo $totalRows_rstable1; ?> Actions]</strong></td>
+    <td colspan="15" align="center"><strong>CY <?php echo $_GET['rdate']; ?> FREEDOM OF INFORMATION (FOI) REGISTRY <?php echo $clientbranch;?> REGION [<?php echo $totalRows_rstable1; ?> Actions]</strong></td>
     </tr>
   <tr>
     <td><strong>No.</strong><?php $i = 1;?></td>

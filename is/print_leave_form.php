@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -130,10 +131,10 @@ $totalRows_rssumsacwithoutpay = mysql_num_rows($rssumsacwithoutpay);
     <td width="300" align="right"><img src="assets/img/ui-sam.png" width="30%" /></td>
     <td>
       Republic of the Philippines<br />
-      Department of Environment and Natural Resources<br />
+      <?php echo $clientfullname;?><br />
       MINES AND GEOSCIENCES BUREAU<br />
-      REGIONAL OFFICE NO. IV-B (MIMAROPA)<br />
-      DENR by the Bay Bldg., Roxas Blvd., Manila</td>
+      REGIONAL OFFICE NO. IV-B (<?php echo $clientbranch;?>)<br />
+      <?php echo $clientalias ;?> by the Bay Bldg., Roxas Blvd., Manila</td>
     </tr>
     </table>
     

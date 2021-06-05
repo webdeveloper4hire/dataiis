@@ -5,7 +5,7 @@
 
 </head>
 <body>
-<p>DENR MIMAROPA PROPERTY</p>
+<p><?php echo $clientalias ;?> <?php echo $clientbranch;?> PROPERTY</p>
 
 <div id="output"></div>
 

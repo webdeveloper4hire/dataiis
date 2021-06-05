@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -89,7 +90,7 @@ function humanTiming ($time)
   <div>
 
 <div class="navbar-fixed-top body-title">    
-	<h3 class="col-lg-10"><?php echo $_GET['tb2_colunm1'];?><small>DENR REGION</small> </h3>
+	<h3 class="col-lg-10"><?php echo $_GET['tb2_colunm1'];?><small><?php echo $clientalias ;?> REGION</small> </h3>
 </div>
             <div class="box-header">
               <a href="upload_form.php?tb2_colunm1=pr" class="button"><button type="submit"  class="btn denr-btn-primary">Add New <?php echo $_GET['tb1_colunm1'];?></button></a></p>
