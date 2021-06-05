@@ -1,8 +1,8 @@
 <?php
-$clientalias = "DENR";
-$clientfullname = "Department of Environment and Natural Resources";
-$clientbranch = "MIMAROPA";
-$clientaddress = "1515 L&S Bldg. Roxas Blvd, Ermita, Manila";
+$clientalias = "OFFICE";
+$clientfullname = "FULLNAME";
+$clientbranch = "Branch";
+$clientaddress = "Address";
 $table1 = "Table Name1"; 
 $table2 = "Table Name2";
 $table3 = "Table Name3";
