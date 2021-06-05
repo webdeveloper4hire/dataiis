@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php date_default_timezone_set('Asia/Manila'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -114,7 +115,7 @@ b\:* {behavior:url(#default#VML);}
   2.88pt'>
   <p class=MsoNormal style='text-align:center;text-align:center'><span
   lang=en-US style='font-family:Arial;color:black;font-weight:bold;language:
-  en-US'>Department of Environment and Natural Resources - MIMAROPA Region</span></p>
+  en-US'><?php echo $clientfullname;?> - <?php echo $clientbranch;?></span></p>
   <p class=MsoNormal style='text-align:center;text-align:center'><span
   lang=en-US style='font-size:12.0pt;font-family:Arial;color:black;font-weight:
   bold;language:en-US'>DAILY TIME RECORD</span></p>
