@@ -1,4 +1,5 @@
 <?php require_once('../Connections/calendarcon.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -104,7 +105,7 @@ $totalRows_rssched = mysql_num_rows($rssched);
 </style>
 </head>
 <body>
-<h2 align="center">DENR MIMAROPA Zoom Scheduling</h2>
+<h2 align="center"><?php echo $clientalias;?> <?php echo $clientbranch;?> Zoom Scheduling</h2>
 <div id='calendar'></div>
 <div>
 <fieldset>
