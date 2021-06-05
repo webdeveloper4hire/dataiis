@@ -250,7 +250,7 @@ date_default_timezone_set("Asia/Hong_Kong");
                                             }
                                             ?><?php echo $row_rsuser['division']; ?>" />
                                             <input type="text" name="tb1_colunm17" value="" id="refresh" />
-                                            <input type="text" name="tb1_colunm19" value="<?php echo $clientbranch;?> Region" />
+                                            <input type="text" name="tb1_colunm19" value="<?php echo $clientbranch;?>" />
                                             <input type="text" name="tb1_colunm20" value="<?php echo date("h:i A"); ?>" />
                                             <input type="text" name="tb1_colunm21" value="<?php echo date('Y-m-d'); ?>" />
                                             <input type="text" name="tb1_colunm22" value="N" />

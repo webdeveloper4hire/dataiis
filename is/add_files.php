@@ -231,7 +231,7 @@ p {
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Office:</td>
-      <td><input type="text" name="tb1_colunm19" value="<?php echo $clientalias ;?>-<?php echo $clientbranch;?> Region" size="32" required></td>
+      <td><input type="text" name="tb1_colunm19" value="<?php echo $clientalias ;?>-<?php echo $clientbranch;?>" size="32" required></td>
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">Files Type:</td>

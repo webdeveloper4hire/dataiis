@@ -265,7 +265,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">Office:</td>
-      <td><input type="text" name="tb1_colunm19" value="<?php echo $clientalias ;?> <?php echo $clientbranch;?> Region" size="32" required /></td>
+      <td><input type="text" name="tb1_colunm19" value="<?php echo $clientalias ;?> <?php echo $clientbranch;?>" size="32" required /></td>
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">Age Quantity:</td>

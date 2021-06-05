@@ -338,7 +338,7 @@ p {
     </tr>
     <tr valign="baseline">
       <td nowrap="nowrap" align="right">Approved:</td>
-      <td><input type="text" name="tb1_colunm20" value="Ma. Lourdes G. Ferrer, CESO III<br/>Regional Executive Director<br/><?php echo $clientbranch;?> Region" size="32" readonly/>
+      <td><input type="text" name="tb1_colunm20" value="Ma. Lourdes G. Ferrer, CESO III<br/>Regional Executive Director<br/><?php echo $clientbranch;?>" size="32" readonly/>
       </td>
     </tr>
     <tr valign="baseline">

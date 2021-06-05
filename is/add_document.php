@@ -186,7 +186,7 @@ $queryString_rstable1 = sprintf("&totalRows_rstable1=%d%s", $totalRows_rstable1,
                                             <input type="text" name="tb1_colunm1" value="Document-Tracking" class="form-control"  size="60" readonly /></div>
                                         <div class="form-group">
                                             <label>Office:</label>
-                                            <input type="text" name="tb1_colunm19" value="<?php echo $clientbranch;?> Region" class="form-control" size="60" readonly /></div>
+                                            <input type="text" name="tb1_colunm19" value="<?php echo $clientbranch;?>" class="form-control" size="60" readonly /></div>
                                         
                                         <div class="form-group">
                                             <label>Category:</label>

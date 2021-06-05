@@ -43,7 +43,7 @@
 
 <td><select name="oic">
 <option value="____________________<br/>Chief, Records Section">Records Section</option>
-<option value="__________________________________<br/>Regional Director, <?php echo $clientbranch;?> Region">Regional Director</option>
+<option value="__________________________________<br/>Regional Director, <?php echo $clientbranch;?>">Regional Director</option>
 <option value="____________________________<br/>IN CHARGE, OFFICE OF THE <br/>REGIONAL DIRECTOR">IN CHARGE-ORD</option>
 </select></td>
 </tr>
