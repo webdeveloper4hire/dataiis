@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
@@ -108,7 +109,7 @@ function humanTiming ($time)
   <div>
 
 <div class="navbar-fixed-top body-title">    
-	<h3 class="col-lg-10">Search Barcode <small>DENR REGION</small> </h3>
+	<h3 class="col-lg-10">Search Barcode <small><?php echo $clientalias ;?> REGION</small> </h3>
 </div>
               
     <div class="box-header">

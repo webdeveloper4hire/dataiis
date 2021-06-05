@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -65,13 +66,13 @@ if(empty($a)) session_start();
   <div>
 
 <div class="navbar-fixed-top body-title">    
-	<h3 class="col-lg-10"> Settings <small>DENR MIMAROPA</small> </h1>
+	<h3 class="col-lg-10"> Settings <small><?php echo $clientalias ;?> <?php echo $clientbranch;?></small> </h1>
       <ol class="breadcrumb">
 
       </ol>
 </section>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD><TITLE>DENR IV-B</TITLE>
+<HTML><HEAD><TITLE><?php echo $clientalias ;?> IV-B</TITLE>
 <script language="javascript" type="text/javascript">
 function validate()
 {

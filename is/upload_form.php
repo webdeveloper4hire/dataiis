@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('access_global.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +8,7 @@
 <meta name="Keywords" content="error message, php, mysql, perl, framework, microsoft, windows, linux, server, host, tutorial, how to fix error message" />
 <meta name="Author" content="webdeveloper4hire@gmail.com" />
 <meta name="Distribution" content="Global" />
-<title>DENR</title>
+<title><?php echo $clientalias ;?></title>
 <style type="text/css">
 
 ::selection{ background-color: #E13300; color: white; }

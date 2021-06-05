@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php date_default_timezone_set('Asia/Manila'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {

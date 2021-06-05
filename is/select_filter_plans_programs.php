@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php require_once('head.php'); ?>
 <?php require_once('menu.php'); ?>
 
@@ -8,7 +9,7 @@
 <div class="navbar-fixed-top body-title">    
 	<h3 class="col-lg-10">
                         Filter Data
-                        <small>DENR</small>
+                        <small><?php echo $clientalias ;?></small>
                     </h3>
 </div>Plans and Programs<a href="#" rel="facebox">Select Filter</a></li>
       </ol>

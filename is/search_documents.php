@@ -1,4 +1,5 @@
 <?php require_once('../Connections/connection.php'); ?>
+<?php require_once('config.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -112,7 +113,7 @@ function humanTiming ($time)
   <div>
 
 <div class="navbar-fixed-top body-title">    
-	<h3 class="col-lg-10">Search Documents <small>DENR</small> </h3>
+	<h3 class="col-lg-10">Search Documents <small><?php echo $clientalias ;?></small> </h3>
 </div>
             <div class="box-header">
               <a href="search_document.php?tb1_colunm1=<?php echo $_GET['tb1_colunm1'];?>&type=refresh_id" class="button" rel="facebox"><button type="submit"  class="btn denr-btn-primary">Add New Document</button></a> <a href="select_document_range_category.php?tb1_colunm1=<?php echo $_GET['tb1_colunm1'];?>" rel="facebox"><button type="submit"  class="btn denr-btn-primary">Select Doc.No. and Category</button></a>
